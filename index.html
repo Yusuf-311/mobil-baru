@@ -318,12 +318,33 @@
       </div>
     </form>
 
-    <div class="bg-secondary p-4">
-      <h3>DP Paling minim yang dapat kami berikan</h3>
-      <p id="outputValue">-</p>
+    <div class="table-responsive fs-md">
+      <h3 class=" my-4">DP Paling minim yang dapat kami berikan</h3>
+
+      <table class="table table-hover mb-0">
+        <thead>
+          <tr>
+            <th>Credit</th>
+            <th>Nilai</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="py-3 align-middle">Dp Murni:</td>
+            <td class="py-3 align-middle"><span id="outputMurni">-</span></td>
+          </tr>
+          <tr>
+            <td class="py-3 align-middle">Discount</td>
+            <td class="py-3 align-middle"><span id="outputDiscount">-</span></td>
+          </tr>
+          <tr class="bg-primary text-light">
+            <td class="py-3 fw-medium align-middle">Dp Anda</td>
+            <td class="py-3 fw-medium align-middle"><span id="outputValue300">-</span></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-
-
   </section>
 
 
@@ -507,7 +528,17 @@
     // Ambil elemen form, input, dan elemen output
     const form = document.getElementById('calculationForm');
     const inputField = document.getElementById('inputValue');
-    const outputField = document.getElementById('outputValue');
+    const output100Field = document.getElementById('outputMurni');
+    const output200Field = document.getElementById('outputDiscount');
+    const output300Field = document.getElementById('outputValue300');
+
+    // Fungsi untuk memformat angka ke dalam format rupiah
+    function formatRupiah(value) {
+      return "Rp. " + value.toLocaleString('id-ID', {
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0
+      });
+    }
 
     // Tambahkan event listener ke form untuk menangani submit
     form.addEventListener('submit', function (event) {
@@ -515,12 +546,47 @@
 
       // Ambil nilai dari input field dan hitung nilainya
       const value = parseFloat(inputField.value);
-      const result = value * 100;
 
-      // Tampilkan hasil perhitungan di elemen output
-      outputField.textContent = isNaN(result) ? 'Masukkan nilai yang valid' : result;
+      // Hitung hasil untuk tiga rumus
+      const murni = value * 0.20;
+      const discount = murni * 0.5;
+      const anda = murni - discount;
+
+      // Tampilkan hasil perhitungan di elemen output dengan format rupiah
+      output100Field.textContent = isNaN(murni) ? 'Masukkan nilai yang valid' : formatRupiah(murni);
+      output200Field.textContent = isNaN(discount) ? 'Masukkan nilai yang valid' : formatRupiah(discount);
+      output300Field.textContent = isNaN(anda) ? 'Masukkan nilai yang valid' : formatRupiah(anda);
     });
   </script>
+
+
+  <!-- <script>
+    // Ambil elemen form, input, dan elemen output
+    const form = document.getElementById('calculationForm');
+    const inputField = document.getElementById('inputValue');
+    const output100Field = document.getElementById('outputMurni');
+    const output200Field = document.getElementById('outputDiscount');
+    const output300Field = document.getElementById('outputValue300');
+
+    // Tambahkan event listener ke form untuk menangani submit
+    form.addEventListener('submit', function (event) {
+      event.preventDefault(); // Mencegah form dari refresh halaman
+
+      // Ambil nilai dari input field dan hitung nilainya
+      const value = parseFloat(inputField.value);
+
+      // Hitung hasil untuk tiga rumus
+      const murni = value * 0.20;
+      const discount = murni * 0.5;
+      const anda = murni - discount;
+
+      // Tampilkan hasil perhitungan di elemen output
+      output100Field.textContent = isNaN(murni) ? 'Masukkan nilai yang valid' : murni;
+      output200Field.textContent = isNaN(discount) ? 'Masukkan nilai yang valid' : discount;
+      output300Field.textContent = isNaN(anda) ? 'Masukkan nilai yang valid' : anda;
+    });
+  </script> -->
+
   <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/simplebar/dist/simplebar.min.js"></script>
   <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
