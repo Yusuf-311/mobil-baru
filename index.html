@@ -340,7 +340,7 @@
           </tr>
           <tr class="bg-primary text-light">
             <td class="py-3 fw-medium align-middle">Dp Anda</td>
-            <td class="py-3 fw-medium align-middle"><span id="outputValue300">-</span></td>
+            <td class="py-3 fw-medium align-middle"><span id="outputAnda">-</span></td>
           </tr>
         </tbody>
       </table>
@@ -523,14 +523,50 @@
   </footer>
 
   <!-- Vendor scrits: js libraries and plugins -->
-
   <script>
     // Ambil elemen form, input, dan elemen output
     const form = document.getElementById('calculationForm');
     const inputField = document.getElementById('inputValue');
     const output100Field = document.getElementById('outputMurni');
     const output200Field = document.getElementById('outputDiscount');
-    const output300Field = document.getElementById('outputValue300');
+    const output300Field = document.getElementById('outputAnda');
+
+    // Fungsi untuk memformat angka ke dalam format rupiah
+    function formatRupiah(value) {
+      return "Rp. " + value.toLocaleString('id-ID', {
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0
+      });
+    }
+
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+
+      const value = parseFloat(inputField.value);
+
+
+      const murni = value * 0.20;
+      const discount1 = (value - murni);
+      const discount = discount1 * 0.5;
+      const anda = murni - discount;
+
+
+      output100Field.textContent = isNaN(murni) ? 'Masukkan nilai yang valid' : formatRupiah(murni);
+      output200Field.textContent = isNaN(discount) ? 'Masukkan nilai yang valid' : formatRupiah(discount);
+      output300Field.textContent = isNaN(anda) ? 'Masukkan nilai yang valid' : formatRupiah(anda);
+    });
+  </script>
+
+
+  <!-- <script>
+    // Ambil elemen form, input, dan elemen output
+    const form = document.getElementById('calculationForm');
+    const inputField = document.getElementById('inputValue');
+    const output100Field = document.getElementById('outputMurni');
+    const output200Field = document.getElementById('outputDiscount');
+    const output300Field = document.getElementById('outputAnda');
 
     // Fungsi untuk memformat angka ke dalam format rupiah
     function formatRupiah(value) {
@@ -557,7 +593,7 @@
       output200Field.textContent = isNaN(discount) ? 'Masukkan nilai yang valid' : formatRupiah(discount);
       output300Field.textContent = isNaN(anda) ? 'Masukkan nilai yang valid' : formatRupiah(anda);
     });
-  </script>
+  </script> -->
 
 
   <!-- <script>
