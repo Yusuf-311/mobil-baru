@@ -523,7 +523,46 @@
   </footer>
 
   <!-- Vendor scrits: js libraries and plugins -->
-  <script>
+
+<script>
+    // Ambil elemen form, input, dan elemen output
+    const form = document.getElementById('calculationForm');
+    const inputField = document.getElementById('inputValue');
+    const output100Field = document.getElementById('outputMurni');
+    const output200Field = document.getElementById('outputDiscount');
+    const output300Field = document.getElementById('outputAnda');
+
+    // Fungsi untuk memformat angka ke dalam format rupiah
+    function formatRupiah(value) {
+      return "Rp. " + value.toLocaleString('id-ID', {
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0
+      });
+    }
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const value = parseFloat(inputField.value);
+
+      // Hitung DP murni (20% dari nilai)
+      const murni = value * 0.20;
+
+      // Hitung diskon (50% dari sisa nilai setelah DP murni)
+      const discount = (value - murni) * 0.5;
+
+      // Pastikan DP Anda tidak negatif dengan menambahkan validasi
+      const anda = murni > discount ? murni - discount : murni;
+
+      // Tampilkan hasilnya dalam format rupiah
+      output100Field.textContent = isNaN(murni) ? 'Masukkan nilai yang valid' : formatRupiah(murni);
+      output200Field.textContent = isNaN(discount) ? 'Masukkan nilai yang valid' : formatRupiah(discount);
+      output300Field.textContent = isNaN(anda) ? 'Masukkan nilai yang valid' : formatRupiah(anda);
+    });
+</script>
+
+
+  <!-- <script>
     // Ambil elemen form, input, dan elemen output
     const form = document.getElementById('calculationForm');
     const inputField = document.getElementById('inputValue');
@@ -557,7 +596,7 @@
       output200Field.textContent = isNaN(discount) ? 'Masukkan nilai yang valid' : formatRupiah(discount);
       output300Field.textContent = isNaN(anda) ? 'Masukkan nilai yang valid' : formatRupiah(anda);
     });
-  </script>
+  </script> -->
 
 
   <!-- <script>
