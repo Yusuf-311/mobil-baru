@@ -1,93 +1,179 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <!-- Title -->
+    <title>Mobil Baru</title>
 
-<head>
-  <!-- Title -->
-  <title>Mobil Baru</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Lorem" />
+    <meta name="keywords" content="lorem" />
+    <meta name="author" content="lorem" />
 
-  <!-- SEO Meta Tags-->
-  <meta name="description" content="Lorem" />
-  <meta name="keywords" content="lorem" />
-  <meta name="author" content="lorem" />
+    <!-- Viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Viewport -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Vendor styles-->
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="vendor/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/chartist/dist/chartist.css" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="vendor/simplebar/dist/simplebar.min.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="vendor/lightgallery.js/dist/css/lightgallery.min.css"
+    />
 
-  <!-- Vendor styles-->
-  <link rel="stylesheet" media="screen" href="vendor/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="vendor/chartist/dist/chartist.css" />
-  <link rel="stylesheet" media="screen" href="vendor/simplebar/dist/simplebar.min.css" />
-  <link rel="stylesheet" media="screen" href="vendor/lightgallery.js/dist/css/lightgallery.min.css" />
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="css/theme.min.css" />
 
-  <!-- Main Theme Styles + Bootstrap-->
-  <link rel="stylesheet" media="screen" href="css/theme.min.css" />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Custom Css -->
-  <link rel="stylesheet" href="css/style.css" />
+    <!-- Bootstrap CDN icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
 
-  <!-- Bootstrap CDN icon -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <body>
+    <!-- Header -->
+    <header
+      class="header navbar navbar-expand-lg navbar-light bg-light navbar-sticky"
+      data-scroll-header=""
+      data-fixed-element=""
+    >
+      <div class="container px-0 px-xl-3">
+        <button
+          class="navbar-toggler ms-n2 me-2"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#primaryMenu"
+        >
+          <span class="navbar-toggler-icon"></span></button
+        ><a
+          class="navbar-brand flex-shrink-0 order-lg-1 mx-auto ms-lg-0 pe-lg-2 me-lg-4"
+          href="http://netfin.id"
+          ><img
+            class="d-none d-lg-block"
+            src="https://wuling.id/assets/images/header/svg/wuling-logo.svg"
+            alt="Honda Logo"
+            width="153" /><img
+            class="d-lg-none"
+            src="https://wuling.id/assets/images/header/svg/wuling-logo.svg"
+            alt="Honda Logo"
+            width="58"
+        /></a>
 
-</head>
-
-
-<body>
-  <!-- Header -->
-  <header class="header navbar navbar-expand-lg navbar-light bg-light navbar-sticky" data-scroll-header=""
-    data-fixed-element="">
-    <div class="container px-0 px-xl-3">
-      <button class="navbar-toggler ms-n2 me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu">
-        <span class="navbar-toggler-icon"></span></button><a
-        class="navbar-brand flex-shrink-0 order-lg-1 mx-auto ms-lg-0 pe-lg-2 me-lg-4" href="index.html"><img
-          class="d-none d-lg-block" src="https://wuling.id/assets/images/header/svg/wuling-logo.svg" alt="Honda Logo"
-          width="153" /><img class="d-lg-none" src="https://wuling.id/assets/images/header/svg/wuling-logo.svg"
-          alt="Honda Logo" width="58" /></a>
-
-      <div class="offcanvas offcanvas-collapse order-lg-2" id="primaryMenu">
-        <div class="offcanvas-header navbar-shadow">
-          <h5 class="mt-1 mb-0">Menu</h5>
-          <button class="btn-close lead" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <!-- Menu-->
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown dropdown-mega">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Mobil Wuling</a>
-            </li>
-            <li class="nav-item dropdown dropdown-mega">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Shopping Tools</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Experience</a>
-            </li>
-          </ul>
+        <div class="offcanvas offcanvas-collapse order-lg-2" id="primaryMenu">
+          <div class="offcanvas-header navbar-shadow">
+            <h5 class="mt-1 mb-0">Menu</h5>
+            <button
+              class="btn-close lead"
+              type="button"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <!-- Menu-->
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown dropdown-mega">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="https://bit.ly/NCShandy"
+                  data-bs-toggle="dropdown"
+                  >Request OTR</a
+                >
+              </li>
+              <li class="nav-item dropdown dropdown-mega">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="https://bit.ly/NCShandy"
+                  data-bs-toggle="dropdown"
+                  >Request Test Drive</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="https://bit.ly/NCShandy"
+                  data-bs-toggle="dropdown"
+                  >Hitung Diskon / Komisi</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- Hero -->
-  <section class="container-fluid jarallax bg-dark py-6 py-md-7 rounded-5" data-jarallax="" data-type="scale-opacity"
-    data-speed="0.09">
-    <div class="row ">
-      <div class="col ">
-        <div class=" bg-light p-5 rounded mb-5">
-          <h1 class="display-5 text-uppercase pb-sm-2 pb-md-3">
-            Konsultan Untuk Pembelian Mobil Baru anda.
-          </h1>
-          <p class="opacity-70 pb-3 pb-md-4 mb-3" style="max-width: 520px">
-            Kami memberikan jasa Konsultasi terbaik untuk anda dalam memilih unit mobil baru untuk keluarga dan
-            keperluan bisnis
-            anda. Hubungi kami sekarang untuk Penawaran terbaik anda.
-          </p>
-          <a class="btn btn-outline-dark" href="https://bit.ly/NCShandy">Hubungi Kami</a>
+    <!-- Hero -->
+    <section
+      class="container-fluid jarallax bg-dark py-6 py-md-7 rounded-5"
+      data-jarallax=""
+      data-type="scale-opacity"
+      data-speed="0.09"
+    >
+      <div class="row" style="width: 1000px">
+        <div class="col bg-light rounded-1">
+          <div class="p-5 rounded mb-5">
+            <h1 class="display-5 text-uppercase pb-sm-2 pb-md-3">
+              Konsultan Untuk Pembelian Mobil Baru anda.
+            </h1>
+            <div class="row">
+              <div class="col-8">
+                <p>
+                  Halo saya Shandy, saya bekerja di salah satu Leasing terkemuka
+                  dalam pembelian Mobil baru. Saya bekerja sama dengan berbagai
+                  macam Dealer seperti Daihatsu, Suzuki, Citroen, Honda, AION,
+                  Hyundai, Nissan, Toyota. Apa kelebihan beli mobil di Shandy ?
+                </p>
+                <ol>
+                  <li>Diskon pasti lebih besar dari yang lain,</li>
+                  <li>
+                    Proses Pengajuan Kredit langsung di pantau Shandy sendiri.
+                  </li>
+                  <li>Jadwal test drive dijamin lebih cepat.</li>
+                  <li>Angsuran dan DP bisa Shandy berikan yang Nett Sekali</li>
+                </ol>
+                <p>
+                  Tapi ingat ya, Proses bisa cepat Asal BI Checking masih dapat
+                  masuk kriteria yang dapat di proses.
+                </p>
+                <p>
+                  Ayo Tunggu apa lagi. Shandy bantu sampai selesai proses
+                  pembelian mobil barunya.
+                </p>
+              </div>
+              <div class="col align-content-end">
+                <img
+                  src="images/office girl.jpg"
+                  class="rounded-circle"
+                  width="150"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <a class="btn btn-outline-dark" href="https://bit.ly/NCShandy"
+              >Hubungi Shandy</a
+            >
+          </div>
         </div>
       </div>
-      <div class="col d-none d-lg-flex"></div>
-    </div>
-    <div id="jarallax-container-0" style="
+      <div
+        id="jarallax-container-0"
+        style="
           position: absolute;
           top: 0px;
           left: 0px;
@@ -95,353 +181,494 @@
           height: 100%;
           overflow: hidden;
           z-index: -100;
-        ">
-      <div class="jarallax-img" style="
-            background-image: url(&quot;https://wuling.id/assets/images/home/home-banner/xKV-Launchh-New-Almaz-RS-Pro-Hybrid_Homebanner-1440x600.jpg.pagespeed.ic.Qh84xdTnWc.webp&quot;);
+        "
+      >
+        <div
+          class="jarallax-img"
+          style="
+            background-image: url(images/homebanner.webp);
             object-fit: cover;
-            object-position: 50% 50%;
-            max-width: none;
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            width: 803px;
-            height: 639.156px;
-            overflow: hidden;
-            pointer-events: none;
-            transform-style: preserve-3d;
-            backface-visibility: hidden;
-            will-change: transform, opacity;
-            margin-top: 0px;
-            transform: scale(1.00959) translate3d(0px, 0px, 0px);
-            opacity: 0.893482;
+            background-size: cover;
           "
-        data-jarallax-original-styles="background-image: url(https://wuling.id/assets/images/home/home-banner/xKV-Launchh-New-Almaz-RS-Pro-Hybrid_Homebanner-1440x600.jpg.pagespeed.ic.Qh84xdTnWc.webp);">
+          data-jarallax-original-styles="background-image: url(images/homebanner.webp);"
+        ></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Features Section -->
-  <section class="container py-5 py-md-6 py-lg-7 pb-0">
-    <h2 class="text-center mb-3">SOLUSI untuk membeli MOBIL BARU</h2>
-    <div class="row justify-content-center mb-5 pb-2">
-      <div class="col-xl-6 col-lg-7">
-        <p class="text-center mb-0">
-          Halo, Kami dari Solusi Mobil baru, kami dapat membantu anda dalam memberikan solusi untuk membeli mobil baru,
-          kami
-          bekerja sama dengan semua ATPM dan Showroom dari berbagai merek di sekitar anda. Konsultasikan kebutuhan anda,
-          kami
-          berikan cicilan dan DP tertendah
-        </p>
-      </div>
-    </div>
-    <div class="row pt-2">
-      <div class="col-sm-4 mb-grid-gutter pb-1">
-        <div class="mx-auto text-center" style="max-width: 278px">
-          <img width="50" height="50" src="https://img.icons8.com/ios/50/car-insurance-card.png"
-            alt="car-insurance-card" />
-          <h3 class="h5">Konsultasi</h3>
-          <p class="fs-sm ">
-            Konsultasikan DP, Cicilan, Tenor. Kami berikan yang paling sesuai dengan kebutuhan anda.
+    <!-- Features Section -->
+    <section class="container py-5">
+      <h1 class="text-center mb-3">subsection h1</h1>
+      <div class="row justify-content-center mb-5 pb-2">
+        <div class="col-xl-6 col-lg-7">
+          <p class="text-center mb-0">
+            Solusi pembelian Mobil baru langsung dari leasing dengan berbagai
+            merek Daihatsu, Suzuki, Citroen, Honda, AION, Hyundai, Nissan,
+            Toyota, Area cakupan Bandung Raya, Cimahi, Padalarang, Kabupaten
+            Bandung, Kabupaten Bandung barat, Purwakarta
           </p>
-          <a href="https://bit.ly/NCShandy">
-            <button class="btn btn-primary">Hubungi Kami</button>
+        </div>
+      </div>
+      <div class="row pt-2">
+        <div class="col-sm-4 mb-grid-gutter pb-1">
+          <div class="mx-auto text-center" style="max-width: 278px">
+            <img
+              width="50"
+              height="50"
+              src="https://img.icons8.com/ios/50/car-insurance-card.png"
+              alt="car-insurance-card"
+            />
+            <h3 class="h5">Konsultasi</h3>
+            <p class="fs-sm">
+              Konsultasikan DP, Cicilan, Tenor. Kami berikan yang paling sesuai
+              dengan kebutuhan anda.
+            </p>
+            <a href="https://bit.ly/NCShandy">
+              <button class="btn btn-primary">Hubungi Shandy</button>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-4 mb-grid-gutter pb-1">
+          <div class="mx-auto text-center" style="max-width: 278px">
+            <img
+              width="50"
+              height="50"
+              src="https://img.icons8.com/external-smashingstocks-mixed-smashing-stocks/68/external-car-loan-finance-trading-and-banking-smashingstocks-mixed-smashing-stocks.png"
+              alt="external-car-loan-finance-trading-and-banking-smashingstocks-mixed-smashing-stocks"
+            />
+            <h3 class="h5">Test Drive</h3>
+            <p class="fs-sm">
+              Jadwalkan Test Drive, Pahami kendaraan pilihan anda. Kami akan
+              berikan kesempatan terbaik untuk anda.
+            </p>
+            <a href="https://bit.ly/NCShandy">
+              <button class="btn btn-primary">Hubungi Shandy</button>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-4 mb-grid-gutter pb-1">
+          <div class="mx-auto text-center" style="max-width: 278px">
+            <img
+              width="50"
+              height="50"
+              src="https://img.icons8.com/external-others-pike-picture/50/external-car-refinance-financial-others-pike-picture-9.png"
+              alt="external-car-refinance-financial-others-pike-picture-9"
+            />
+            <h3 class="h5">Pengiriman Mobil</h3>
+            <p class="fs-sm">
+              Pengiriman Mobil 1 hari setelah DP masuk, Kok bisa ? Ayo
+              Konsultasikan segera.
+            </p>
+            <a href="https://bit.ly/NCShandy">
+              <button class="btn btn-primary">Hubungi Shandy</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand -->
+    <section class="container mt-md-0 pb-md-4">
+      <h2 class="mb-5 text-center">ATPM Partnership</h2>
+      <div class="row">
+        <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter">
+          <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
+            <div class="card-body px-1 py-0 text-center">
+              <div class="swap-image">
+                <img
+                  class="swap-to"
+                  src="images/toyota-logo.png"
+                  alt="Brand logo"
+                  width="100"
+                /><img
+                  class="swap-from"
+                  src="images/toyota-logo.png"
+                  alt="Brand logo"
+                  width="100"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter">
+          <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
+            <div class="card-body px-1 py-0 text-center">
+              <div class="swap-image">
+                <img
+                  class="swap-to"
+                  src="images/daihatsu-logo.png"
+                  alt="Brand logo"
+                  width="100"
+                /><img
+                  class="swap-from"
+                  src="images/daihatsu-logo.png"
+                  alt="Brand logo"
+                  width="100"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter">
+          <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
+            <div class="card-body px-1 py-0 text-center">
+              <div class="swap-image">
+                <img
+                  class="swap-to"
+                  src="images/kia-logo.png"
+                  alt="Brand logo"
+                  width="100"
+                /><img
+                  class="swap-from"
+                  src="images/kia-logo.png"
+                  alt="Brand logo"
+                  width="100"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter">
+          <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
+            <div class="card-body px-1 py-0 text-center">
+              <div class="swap-image">
+                <img
+                  class="swap-to"
+                  src="images/honda-logo.png"
+                  alt="Brand logo"
+                  width="100"
+                /><img
+                  class="swap-from"
+                  src="images/honda-logo.png"
+                  alt="Brand logo"
+                  width="100"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter">
+          <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
+            <div class="card-body px-1 py-0 text-center">
+              <div class="swap-image">
+                <img
+                  class="swap-to"
+                  src="images/hyundai-logo.png"
+                  alt="Brand logo"
+                  width="100"
+                /><img
+                  class="swap-from"
+                  src="images/hyundai-logo.png"
+                  alt="Brand logo"
+                  width="100"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter">
+          <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
+            <div class="card-body px-1 py-0 text-center">
+              <div class="swap-image">
+                <img
+                  class="swap-to"
+                  src="images/mercedes-benz-logo.png"
+                  alt="Brand logo"
+                  width="100"
+                /><img
+                  class="swap-from"
+                  src="images/mercedes-benz-logo.png"
+                  alt="Brand logo"
+                  width="100"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter">
+          <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
+            <div class="card-body px-1 py-0 text-center">
+              <div class="swap-image">
+                <img
+                  class="swap-to"
+                  src="images/mitsubishi-logo.png"
+                  alt="Brand logo"
+                  width="100"
+                /><img
+                  class="swap-from"
+                  src="images/mitsubishi-logo.png"
+                  alt="Brand logo"
+                  width="100"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter">
+          <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
+            <div class="card-body px-1 py-0 text-center">
+              <div class="swap-image">
+                <img
+                  class="swap-to"
+                  src="images/nissan-logo.png"
+                  alt="Brand logo"
+                  width="100"
+                /><img
+                  class="swap-from"
+                  src="images/nissan-logo.png"
+                  alt="Brand logo"
+                  width="100"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter">
+          <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
+            <div class="card-body px-1 py-0 text-center">
+              <div class="swap-image">
+                <img
+                  class="swap-to"
+                  src="images/suzuki-logo.png"
+                  alt="Brand logo"
+                  width="100"
+                /><img
+                  class="swap-from"
+                  src="images/suzuki-logo.png"
+                  alt="Brand logo"
+                  width="100"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter">
+          <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
+            <div class="card-body px-1 py-0 text-center">
+              <div class="swap-image">
+                <img
+                  class="swap-to"
+                  src="images/citroen-logo.png"
+                  alt="Brand logo"
+                  width="100"
+                /><img
+                  class="swap-from"
+                  src="images/citroen-logo.png"
+                  alt="Brand logo"
+                  width="100"
+                />
+              </div>
+            </div>
           </a>
         </div>
       </div>
-      <div class="col-sm-4 mb-grid-gutter pb-1">
-        <div class="mx-auto text-center" style="max-width: 278px">
-          <img width="50" height="50"
-            src="https://img.icons8.com/external-smashingstocks-mixed-smashing-stocks/68/external-car-loan-finance-trading-and-banking-smashingstocks-mixed-smashing-stocks.png"
-            alt="external-car-loan-finance-trading-and-banking-smashingstocks-mixed-smashing-stocks" />
-          <h3 class="h5">Test Drive</h3>
-          <p class="fs-sm ">
-            Jadwalkan Test Drive, Pahami kendaraan pilihan anda. Kami akan berikan kesempatan terbaik untuk anda.
-          </p>
-          <a href="https://bit.ly/NCShandy">
-            <button class="btn btn-primary">Hubungi Kami</button>
-          </a>
+
+      <div class="d-flex justify-content-center">
+        <a href="">
+          <button class="btn btn-primary">Request Price List</button></a
+        >
+      </div>
+    </section>
+
+    <!-- Leasing Partner -->
+
+    <section class="bg-secondary mt-3 mt-md-0 pt-md-6 pb-md-4">
+      <div class="container py-4">
+        <h2 class="mb-5 text-center">Leasing Partner</h2>
+        <div class="row slider align-items-center">
+          <div class="col-md-4 col-sm-4 col-12 mb-grid-gutter slider-item">
+            <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
+              <div class="card-body px-1 py-0 text-center">
+                <div class="swap-image">
+                  <img
+                    class="swap-to"
+                    src="images/indomobilfinance.jpg"
+                    alt="Brand logo"
+                    width="300"
+                    height="300"
+                  /><img
+                    class="swap-from"
+                    src="images/indomobilfinance.jpg"
+                    alt="Brand logo"
+                    width="300"
+                    height="300"
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-4 col-12 mb-grid-gutter slider-item">
+            <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
+              <div class="card-body px-1 py-0 text-center">
+                <div class="swap-image">
+                  <img
+                    class="swap-to"
+                    src="images/mega.png"
+                    alt="Brand logo"
+                    width="200"
+                  /><img
+                    class="swap-from"
+                    src="images/mega.png"
+                    alt="Brand logo"
+                    width="200"
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-4 col-12 mb-grid-gutter slider-item">
+            <a class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
+              <div class="card-body px-1 py-0 text-center">
+                <div class="swap-image">
+                  <img
+                    class="swap-to"
+                    src="images/adira.png"
+                    alt="Brand logo"
+                    width="200"
+                  /><img
+                    class="swap-from"
+                    src="images/adira.png"
+                    alt="Brand logo"
+                    width="200"
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="col-sm-4 mb-grid-gutter pb-1">
-        <div class="mx-auto text-center" style="max-width: 278px">
-          <img width="50" height="50"
-            src="https://img.icons8.com/external-others-pike-picture/50/external-car-refinance-financial-others-pike-picture-9.png"
-            alt="external-car-refinance-financial-others-pike-picture-9" />
-          <h3 class="h5">Pengiriman Mobil</h3>
-          <p class="fs-sm ">
-            Pengiriman Mobil 1 hari setelah DP masuk, Kok bias ? Ayo Konsultasikan segera.
-          </p>
-          <a href="https://bit.ly/NCShandy">
-            <button class="btn btn-primary">Hubungi Kami</button>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-
-
-  <!-- Brand -->
-  <section class="container mt-3 mt-md-0 pt-md-6  pb-md-4">
-    <h2 class="mb-5 text-center">ATPM Partnership</h2>
-    <div class="row">
-      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 shadow card-hover py-3 py-sm-4"
-          href="#">
-          <div class="card-body px-1 py-0 text-center">
-            <div class="swap-image"><img class="swap-to" src="images/toyota-logo.png" alt="Brand logo" width="100"><img
-                class="swap-from" src="images/toyota-logo.png" alt="Brand logo" width="100">
-            </div>
-          </div>
-        </a></div>
-      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 shadow card-hover py-3 py-sm-4"
-          href="#">
-          <div class="card-body px-1 py-0 text-center">
-            <div class="swap-image"><img class="swap-to" src="images/daihatsu-logo.png" alt="Brand logo"
-                width="100"><img class="swap-from" src="images/daihatsu-logo.png" alt="Brand logo" width="100">
-            </div>
-          </div>
-        </a></div>
-      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 shadow card-hover py-3 py-sm-4"
-          href="#">
-          <div class="card-body px-1 py-0 text-center">
-            <div class="swap-image"><img class="swap-to" src="images/kia-logo.png" alt="Brand logo" width="100"><img
-                class="swap-from" src="images/kia-logo.png" alt="Brand logo" width="100"></div>
-          </div>
-        </a></div>
-      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 shadow card-hover py-3 py-sm-4"
-          href="#">
-          <div class="card-body px-1 py-0 text-center">
-            <div class="swap-image"><img class="swap-to" src="images/honda-logo.png" alt="Brand logo" width="100"><img
-                class="swap-from" src="images/honda-logo.png" alt="Brand logo" width="100"></div>
-          </div>
-        </a></div>
-
-      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 shadow card-hover py-3 py-sm-4"
-          href="#">
-          <div class="card-body px-1 py-0 text-center">
-            <div class="swap-image"><img class="swap-to" src="images/hyundai-logo.png" alt="Brand logo" width="100"><img
-                class="swap-from" src="images/hyundai-logo.png" alt="Brand logo" width="100"></div>
-          </div>
-        </a></div>
-      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 shadow card-hover py-3 py-sm-4"
-          href="#">
-          <div class="card-body px-1 py-0 text-center">
-            <div class="swap-image"><img class="swap-to" src="images/mercedes-benz-logo.png" alt="Brand logo"
-                width="100"><img class="swap-from" src="images/mercedes-benz-logo.png" alt="Brand logo" width="100">
-            </div>
-          </div>
-        </a></div>
-      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 shadow card-hover py-3 py-sm-4"
-          href="#">
-          <div class="card-body px-1 py-0 text-center">
-            <div class="swap-image"><img class="swap-to" src="images/mitsubishi-logo.png" alt="Brand logo"
-                width="100"><img class="swap-from" src="images/mitsubishi-logo.png" alt="Brand logo" width="100">
-            </div>
-          </div>
-        </a></div>
-      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 shadow card-hover py-3 py-sm-4"
-          href="#">
-          <div class="card-body px-1 py-0 text-center">
-            <div class="swap-image"><img class="swap-to" src="images/nissan-logo.png" alt="Brand logo" width="100"><img
-                class="swap-from" src="images/nissan-logo.png" alt="Brand logo" width="100">
-            </div>
-          </div>
-        </a></div>
-      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 shadow card-hover py-3 py-sm-4"
-          href="#">
-          <div class="card-body px-1 py-0 text-center">
-            <div class="swap-image"><img class="swap-to" src="images/suzuki-logo.png" alt="Brand logo" width="100"><img
-                class="swap-from" src="images/suzuki-logo.png" alt="Brand logo" width="100">
-            </div>
-          </div>
-        </a></div>
-      <div class="col-md-3 col-sm-4 col-6 mb-grid-gutter"><a class="card border-0 shadow card-hover py-3 py-sm-4"
-          href="#">
-          <div class="card-body px-1 py-0 text-center">
-            <div class="swap-image"><img class="swap-to" src="images/citroen-logo.png" alt="Brand logo" width="100"><img
-                class="swap-from" src="images/citroen-logo.png" alt="Brand logo" width="100">
-            </div>
-          </div>
-        </a></div>
-
-    </div>
-
-    <div class="d-flex justify-content-center">
-      <a href=""> <button class="btn btn-primary">Request Price List </button></a>
-      <a href=""> <button class="btn btn-primary mx-3"> Test Drive </button></a>
-      <a href=""> <button class="btn btn-primary"> Marketing </button></a>
-
-    </div>
-  </section>
-
-  <!-- Leasing Partner -->
-
-  <section class=" bg-secondary mt-3 mt-md-0 pt-md-6 pb-md-4">
-    <div class="container py-4">
-      <h2 class="mb-5 text-center">Leasing Partner</h2>
-      <div class="row slider align-items-center">
-        <div class="col-md-4 col-sm-4 col-12 mb-grid-gutter slider-item"><a
-            class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
-            <div class="card-body px-1 py-0 text-center">
-              <div class="swap-image"><img class="swap-to" src="images/indomobilfinance.jpg" alt="Brand logo"
-                  width="300" height="300"><img class="swap-from" src="images/indomobilfinance.jpg" alt="Brand logo"
-                  width="300" height="300">
-              </div>
-            </div>
-          </a></div>
-        <div class="col-md-4 col-sm-4 col-12 mb-grid-gutter slider-item"><a
-            class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
-            <div class="card-body px-1 py-0 text-center">
-              <div class="swap-image"><img class="swap-to" src="images/mega.png" alt="Brand logo" width="200"><img
-                  class="swap-from" src="images/mega.png" alt="Brand logo" width="200">
-              </div>
-            </div>
-          </a></div>
-        <div class="col-md-4 col-sm-4 col-12 mb-grid-gutter slider-item"><a
-            class="card border-0 shadow card-hover py-3 py-sm-4" href="#">
-            <div class="card-body px-1 py-0 text-center">
-              <div class="swap-image"><img class="swap-to" src="images/adira.png" alt="Brand logo" width="200"><img
-                  class="swap-from" src="images/adira.png" alt="Brand logo" width="200">
-              </div>
-            </div>
-          </a></div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Form DP -->
-  <section class="container py-4  mt-3 mt-md-0 pt-md-6 pb-md-4">
-
-    <h2 class="text-center mb-4">Hitung DP Minimal</h2>
-
-    <form class="row mb-3 align-items-end" id="calculationForm">
-      <div class="col-6">
-        <label class="form-label fs-5" for="inputValue">Nilai DP: </label>
-        <input class="form-control " type="number" id="inputValue" placeholder="Masukkan nilai..." required>
-      </div>
-      <div class="col-2 align-items-end">
-        <button class="btn btn-primary" type="submit">Hitung</button>
-      </div>
-    </form>
-
-    <div class="table-responsive fs-md">
-      <h3 class=" my-4">DP Paling minim yang dapat kami berikan</h3>
-
-      <table class="table table-hover mb-0">
-        <thead>
-          <tr>
-            <th>Credit</th>
-            <th>Nilai</th>
-
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="py-3 align-middle">Dp Murni:</td>
-            <td class="py-3 align-middle"><span id="outputMurni">-</span></td>
-          </tr>
-          <tr>
-            <td class="py-3 align-middle">Discount</td>
-            <td class="py-3 align-middle"><span id="outputDiscount">-</span></td>
-          </tr>
-          <tr class="bg-primary text-light">
-            <td class="py-3 fw-medium align-middle">Dp Anda</td>
-            <td class="py-3 fw-medium align-middle"><span id="outputAnda">-</span></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-
-  <!-- QNA -->
-  <section class="bg-secondary py-5 py-md-6 py-lg-7">
-    <div class="container mt-n4 py-3 py-md-2">
-      <h2 class="text-center mb-5">Questions &amp; Answers</h2>
-      <div class="row justify-content-center">
-        <div class="col-lg-8 col-md-9">
-          <div class="accordion" id="faq">
-            <div class="accordion-item bg-white shadow">
-              <h2 class="accordion-header" id="faq-heading-1">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#faq-content-1" aria-expanded="false" aria-controls="faq-content-1">
-                  Can I import my projects from Teamwork?
-                </button>
-              </h2>
-              <div class="accordion-collapse collapse" id="faq-content-1" aria-labelledby="faq-heading-1"
-                data-bs-parent="#faq" style="">
-                <div class="accordion-body">
-                  <div class="fs-sm">
-                    At vero eos et accusamus et iusto odio dignissimos ducimus
-                    qui blanditiis praesentium voluptatum deleniti atque
-                    corrupti quos dolores et quas molestias excepturi sint
-                    occaecati cupiditate non provident, similique sunt in
-                    culpa qui officia deserunt mollitia animi, id est laborum
-                    et dolorum fuga.
+    <!-- QNA -->
+    <section class="bg-secondary py-5 py-md-6 py-lg-7">
+      <div class="container mt-n4 py-3 py-md-2">
+        <h2 class="text-center mb-5">Questions &amp; Answers</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-9">
+            <div class="accordion" id="faq">
+              <div class="accordion-item bg-white shadow">
+                <h2 class="accordion-header" id="faq-heading-1">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-1"
+                    aria-expanded="false"
+                    aria-controls="faq-content-1"
+                  >
+                    Can I import my projects from Teamwork?
+                  </button>
+                </h2>
+                <div
+                  class="accordion-collapse collapse"
+                  id="faq-content-1"
+                  aria-labelledby="faq-heading-1"
+                  data-bs-parent="#faq"
+                  style=""
+                >
+                  <div class="accordion-body">
+                    <div class="fs-sm">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus
+                      qui blanditiis praesentium voluptatum deleniti atque
+                      corrupti quos dolores et quas molestias excepturi sint
+                      occaecati cupiditate non provident, similique sunt in
+                      culpa qui officia deserunt mollitia animi, id est laborum
+                      et dolorum fuga.
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="accordion-item bg-white shadow">
-              <h2 class="accordion-header" id="faq-heading-2">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#faq-content-2" aria-expanded="false" aria-controls="faq-content-2">
-                  What are correct file permissions?
-                </button>
-              </h2>
-              <div class="accordion-collapse collapse" id="faq-content-2" aria-labelledby="faq-heading-2"
-                data-bs-parent="#faq">
-                <div class="accordion-body">
-                  <div class="fs-sm">
-                    At vero eos et accusamus et iusto odio dignissimos ducimus
-                    qui blanditiis praesentium voluptatum deleniti atque
-                    corrupti quos dolores et quas molestias excepturi sint
-                    occaecati cupiditate non provident, similique sunt in
-                    culpa qui officia deserunt mollitia animi, id est laborum
-                    et dolorum fuga.
+              <div class="accordion-item bg-white shadow">
+                <h2 class="accordion-header" id="faq-heading-2">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-2"
+                    aria-expanded="false"
+                    aria-controls="faq-content-2"
+                  >
+                    What are correct file permissions?
+                  </button>
+                </h2>
+                <div
+                  class="accordion-collapse collapse"
+                  id="faq-content-2"
+                  aria-labelledby="faq-heading-2"
+                  data-bs-parent="#faq"
+                >
+                  <div class="accordion-body">
+                    <div class="fs-sm">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus
+                      qui blanditiis praesentium voluptatum deleniti atque
+                      corrupti quos dolores et quas molestias excepturi sint
+                      occaecati cupiditate non provident, similique sunt in
+                      culpa qui officia deserunt mollitia animi, id est laborum
+                      et dolorum fuga.
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="accordion-item bg-white shadow">
-              <h2 class="accordion-header" id="faq-heading-3">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3"
-                  aria-expanded="true" aria-controls="faq-content-3">
-                  How to set default projects for new users?
-                </button>
-              </h2>
-              <div class="accordion-collapse collapse show" id="faq-content-3" aria-labelledby="faq-heading-3"
-                data-bs-parent="#faq" style="">
-                <div class="accordion-body">
-                  <div class="fs-sm">
-                    At vero eos et accusamus et iusto odio dignissimos ducimus
-                    qui blanditiis praesentium voluptatum deleniti atque
-                    corrupti quos dolores et quas molestias excepturi sint
-                    occaecati cupiditate non provident, similique sunt in
-                    culpa qui officia deserunt mollitia animi, id est laborum
-                    et dolorum fuga.
+              <div class="accordion-item bg-white shadow">
+                <h2 class="accordion-header" id="faq-heading-3">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-3"
+                    aria-expanded="true"
+                    aria-controls="faq-content-3"
+                  >
+                    How to set default projects for new users?
+                  </button>
+                </h2>
+                <div
+                  class="accordion-collapse collapse show"
+                  id="faq-content-3"
+                  aria-labelledby="faq-heading-3"
+                  data-bs-parent="#faq"
+                  style=""
+                >
+                  <div class="accordion-body">
+                    <div class="fs-sm">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus
+                      qui blanditiis praesentium voluptatum deleniti atque
+                      corrupti quos dolores et quas molestias excepturi sint
+                      occaecati cupiditate non provident, similique sunt in
+                      culpa qui officia deserunt mollitia animi, id est laborum
+                      et dolorum fuga.
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="accordion-item bg-white shadow">
-              <h2 class="accordion-header" id="faq-heading-4">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#faq-content-4" aria-expanded="false" aria-controls="faq-content-4">
-                  Is it possible to upload files from Google Drive?
-                </button>
-              </h2>
-              <div class="accordion-collapse collapse" id="faq-content-4" aria-labelledby="faq-heading-4"
-                data-bs-parent="#faq">
-                <div class="accordion-body">
-                  <div class="fs-sm">
-                    At vero eos et accusamus et iusto odio dignissimos ducimus
-                    qui blanditiis praesentium voluptatum deleniti atque
-                    corrupti quos dolores et quas molestias excepturi sint
-                    occaecati cupiditate non provident, similique sunt in
-                    culpa qui officia deserunt mollitia animi, id est laborum
-                    et dolorum fuga.
+              <div class="accordion-item bg-white shadow">
+                <h2 class="accordion-header" id="faq-heading-4">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-4"
+                    aria-expanded="false"
+                    aria-controls="faq-content-4"
+                  >
+                    Is it possible to upload files from Google Drive?
+                  </button>
+                </h2>
+                <div
+                  class="accordion-collapse collapse"
+                  id="faq-content-4"
+                  aria-labelledby="faq-heading-4"
+                  data-bs-parent="#faq"
+                >
+                  <div class="accordion-body">
+                    <div class="fs-sm">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus
+                      qui blanditiis praesentium voluptatum deleniti atque
+                      corrupti quos dolores et quas molestias excepturi sint
+                      occaecati cupiditate non provident, similique sunt in
+                      culpa qui officia deserunt mollitia animi, id est laborum
+                      et dolorum fuga.
+                    </div>
                   </div>
                 </div>
               </div>
@@ -449,240 +676,118 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer bg-dark pt-5 pt-md-6">
-    <div class="container pt-3 pt-md-0">
-      <div class="row pb-3">
-        <div class="col-md-4 mt-n2 pb-3 pb-md-0 mb-4">
-          <h3 class="fs-sm text-light pb-2 pb-sm-3">
-            PT SGMW MOTOR INDONESIA
-          </h3>
-          <p class="text-light">
-            Greenland International Industrial Center (GIIC), Blok BA No. 1,
-            Deltamas, Cikarang, Bekasi, Jawa Barat, Indonesia Jl. Tol
-            Jakarta-Cikampek KM 37 Kode Pos: 17530
-          </p>
-          <a class="btn-social bs-outline bs-facebook bs-light bs-lg me-2 mb-2" href="#"><i
-              class="bi bi-facebook"></i></a><a class="btn-social bs-outline bs-twitter bs-light bs-lg me-2 mb-2"
-            href="#"><i class="bi bi-twitter"></i></a><a
-            class="btn-social bs-outline bs-instagram bs-light bs-lg me-2 mb-2" href="#"><i
-              class="bi bi-instagram"></i></a><a class="btn-social bs-outline bs-google bs-light bs-lg me-2 mb-2"
-            href="#"><i class="bi bi-google"></i></a>
+    <!-- Footer -->
+    <footer class="footer bg-dark pt-5 pt-md-6">
+      <div class="container pt-3 pt-md-0">
+        <div class="row pb-3">
+          <div class="col-md-4 mt-n2 pb-3 pb-md-0 mb-4">
+            <h3 class="fs-sm text-light pb-2 pb-sm-3">
+              PT SGMW MOTOR INDONESIA
+            </h3>
+            <p class="text-light">
+              Greenland International Industrial Center (GIIC), Blok BA No. 1,
+              Deltamas, Cikarang, Bekasi, Jawa Barat, Indonesia Jl. Tol
+              Jakarta-Cikampek KM 37 Kode Pos: 17530
+            </p>
+            <a
+              class="btn-social bs-outline bs-facebook bs-light bs-lg me-2 mb-2"
+              href="#"
+              ><i class="bi bi-facebook"></i></a
+            ><a
+              class="btn-social bs-outline bs-twitter bs-light bs-lg me-2 mb-2"
+              href="#"
+              ><i class="bi bi-twitter"></i></a
+            ><a
+              class="btn-social bs-outline bs-instagram bs-light bs-lg me-2 mb-2"
+              href="#"
+              ><i class="bi bi-instagram"></i></a
+            ><a
+              class="btn-social bs-outline bs-google bs-light bs-lg me-2 mb-2"
+              href="#"
+              ><i class="bi bi-google"></i
+            ></a>
+          </div>
+          <div class="col-md-2 col-6 ms-auto pb-1 mb-4">
+            <div class="widget widget-light">
+              <h4 class="widget-title">Tentang Kami</h4>
+              <ul>
+                <li><a class="widget-link" href="#">About</a></li>
+                <li><a class="widget-link" href="#">Careers</a></li>
+                <li><a class="widget-link" href="#">Press</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-6 col-sm-4 pb-1 mb-4">
+            <div class="widget widget-light">
+              <h4 class="widget-title">Communities</h4>
+              <ul>
+                <li><a class="widget-link" href="#">For artists</a></li>
+                <li><a class="widget-link" href="#">Developers</a></li>
+                <li><a class="widget-link" href="#">Brands</a></li>
+                <li><a class="widget-link" href="#">Investors</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 mb-4">
+            <div class="widget widget-light">
+              <h4 class="widget-title">Our news</h4>
+              <ul>
+                <li><a class="widget-link" href="#">Latest news</a></li>
+                <li><a class="widget-link" href="#">Updates</a></li>
+                <li><a class="widget-link" href="#">Campaigns</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="col-md-2 col-6 ms-auto pb-1 mb-4">
-          <div class="widget widget-light">
-            <h4 class="widget-title">Tentang Kami</h4>
-            <ul>
-              <li><a class="widget-link" href="#">About</a></li>
-              <li><a class="widget-link" href="#">Careers</a></li>
-              <li><a class="widget-link" href="#">Press</a></li>
+        <hr class="my-0 border-light" />
+        <div class="row align-items-center mt-3 py-4">
+          <div class="col-md-6 order-md-2 text-md-end mb-3">
+            <ul class="list-inline fs-sm mb-0">
+              <li class="list-inline-item">
+                <a class="nav-link-style nav-link-light" href="#">Support</a>
+              </li>
+              <li class="list-inline-item">
+                <a class="nav-link-style nav-link-light" href="#">Contacts</a>
+              </li>
+              <li class="list-inline-item">
+                <a class="nav-link-style nav-link-light" href="#"
+                  >Terms &amp; Conditions</a
+                >
+              </li>
             </ul>
           </div>
-        </div>
-        <div class="col-lg-2 col-6 col-sm-4 pb-1 mb-4">
-          <div class="widget widget-light">
-            <h4 class="widget-title">Communities</h4>
-            <ul>
-              <li><a class="widget-link" href="#">For artists</a></li>
-              <li><a class="widget-link" href="#">Developers</a></li>
-              <li><a class="widget-link" href="#">Brands</a></li>
-              <li><a class="widget-link" href="#">Investors</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4 mb-4">
-          <div class="widget widget-light">
-            <h4 class="widget-title">Our news</h4>
-            <ul>
-              <li><a class="widget-link" href="#">Latest news</a></li>
-              <li><a class="widget-link" href="#">Updates</a></li>
-              <li><a class="widget-link" href="#">Campaigns</a></li>
-            </ul>
+          <div class="col-md-6 order-md-1 mb-3">
+            <p class="fs-sm mb-0">
+              <span class="text-light opacity-50 me-1"
+                >© All rights reserved. Made by</span
+              ><a
+                class="nav-link-style nav-link-light"
+                href="#"
+                target="_blank"
+                rel="noopener"
+                >Netfin.id</a
+              >
+            </p>
           </div>
         </div>
       </div>
-      <hr class="my-0 border-light" />
-      <div class="row align-items-center mt-3 py-4">
-        <div class="col-md-6 order-md-2 text-md-end mb-3">
-          <ul class="list-inline fs-sm mb-0">
-            <li class="list-inline-item">
-              <a class="nav-link-style nav-link-light" href="#">Support</a>
-            </li>
-            <li class="list-inline-item">
-              <a class="nav-link-style nav-link-light" href="#">Contacts</a>
-            </li>
-            <li class="list-inline-item">
-              <a class="nav-link-style nav-link-light" href="#">Terms &amp; Conditions</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-6 order-md-1 mb-3">
-          <p class="fs-sm mb-0">
-            <span class="text-light opacity-50 me-1">© All rights reserved. Made by</span><a
-              class="nav-link-style nav-link-light" href="#" target="_blank" rel="noopener">Netfin.id</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Vendor scrits: js libraries and plugins -->
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="vendor/jarallax/dist/jarallax.min.js"></script>
 
-  <script>
-    // Ambil elemen form, input, dan elemen output
-    const form = document.getElementById('calculationForm');
-    const inputField = document.getElementById('inputValue');
-    const output100Field = document.getElementById('outputMurni');
-    const output200Field = document.getElementById('outputDiscount');
-    const output300Field = document.getElementById('outputAnda');
-
-    // Fungsi untuk memformat angka ke dalam format rupiah
-    function formatRupiah(value) {
-      return "Rp. " + value.toLocaleString('id-ID', {
-        minimumFractionDigits: 0,
-        maximumFractionDigits: 0
-      });
-    }
-
-    form.addEventListener('submit', function (event) {
-      event.preventDefault();
-
-      const value = parseFloat(inputField.value);
-
-      // Hitung DP murni (20% dari nilai)
-      const murni = value * 0.20;
-
-      // Hitung diskon (50% dari sisa nilai setelah DP murni)
-      const discount = (value - murni) * 0.5;
-
-      // Pastikan DP Anda tidak negatif dengan menambahkan validasi
-      const anda = murni > discount ? murni - discount : murni;
-
-      // Tampilkan hasilnya dalam format rupiah
-      output100Field.textContent = isNaN(murni) ? 'Masukkan nilai yang valid' : formatRupiah(murni);
-      output200Field.textContent = isNaN(discount) ? 'Masukkan nilai yang valid' : formatRupiah(discount);
-      output300Field.textContent = isNaN(anda) ? 'Masukkan nilai yang valid' : formatRupiah(anda);
-    });
-  </script>
-
-
-  <!-- <script>
-    // Ambil elemen form, input, dan elemen output
-    const form = document.getElementById('calculationForm');
-    const inputField = document.getElementById('inputValue');
-    const output100Field = document.getElementById('outputMurni');
-    const output200Field = document.getElementById('outputDiscount');
-    const output300Field = document.getElementById('outputAnda');
-
-    // Fungsi untuk memformat angka ke dalam format rupiah
-    function formatRupiah(value) {
-      return "Rp. " + value.toLocaleString('id-ID', {
-        minimumFractionDigits: 0,
-        maximumFractionDigits: 0
-      });
-    }
-
-
-    form.addEventListener('submit', function (event) {
-      event.preventDefault();
-
-
-      const value = parseFloat(inputField.value);
-
-
-      const murni = value * 0.20;
-      const discount1 = (value - murni);
-      const discount = discount1 * 0.5;
-      const anda = murni - discount;
-
-
-      output100Field.textContent = isNaN(murni) ? 'Masukkan nilai yang valid' : formatRupiah(murni);
-      output200Field.textContent = isNaN(discount) ? 'Masukkan nilai yang valid' : formatRupiah(discount);
-      output300Field.textContent = isNaN(anda) ? 'Masukkan nilai yang valid' : formatRupiah(anda);
-    });
-  </script> -->
-
-
-  <!-- <script>
-    // Ambil elemen form, input, dan elemen output
-    const form = document.getElementById('calculationForm');
-    const inputField = document.getElementById('inputValue');
-    const output100Field = document.getElementById('outputMurni');
-    const output200Field = document.getElementById('outputDiscount');
-    const output300Field = document.getElementById('outputAnda');
-
-    // Fungsi untuk memformat angka ke dalam format rupiah
-    function formatRupiah(value) {
-      return "Rp. " + value.toLocaleString('id-ID', {
-        minimumFractionDigits: 0,
-        maximumFractionDigits: 0
-      });
-    }
-
-    // Tambahkan event listener ke form untuk menangani submit
-    form.addEventListener('submit', function (event) {
-      event.preventDefault(); // Mencegah form dari refresh halaman
-
-      // Ambil nilai dari input field dan hitung nilainya
-      const value = parseFloat(inputField.value);
-
-      // Hitung hasil untuk tiga rumus
-      const murni = value * 0.20;
-      const discount = murni * 0.5;
-      const anda = murni - discount;
-
-      // Tampilkan hasil perhitungan di elemen output dengan format rupiah
-      output100Field.textContent = isNaN(murni) ? 'Masukkan nilai yang valid' : formatRupiah(murni);
-      output200Field.textContent = isNaN(discount) ? 'Masukkan nilai yang valid' : formatRupiah(discount);
-      output300Field.textContent = isNaN(anda) ? 'Masukkan nilai yang valid' : formatRupiah(anda);
-    });
-  </script> -->
-
-
-  <!-- <script>
-    // Ambil elemen form, input, dan elemen output
-    const form = document.getElementById('calculationForm');
-    const inputField = document.getElementById('inputValue');
-    const output100Field = document.getElementById('outputMurni');
-    const output200Field = document.getElementById('outputDiscount');
-    const output300Field = document.getElementById('outputValue300');
-
-    // Tambahkan event listener ke form untuk menangani submit
-    form.addEventListener('submit', function (event) {
-      event.preventDefault(); // Mencegah form dari refresh halaman
-
-      // Ambil nilai dari input field dan hitung nilainya
-      const value = parseFloat(inputField.value);
-
-      // Hitung hasil untuk tiga rumus
-      const murni = value * 0.20;
-      const discount = murni * 0.5;
-      const anda = murni - discount;
-
-      // Tampilkan hasil perhitungan di elemen output
-      output100Field.textContent = isNaN(murni) ? 'Masukkan nilai yang valid' : murni;
-      output200Field.textContent = isNaN(discount) ? 'Masukkan nilai yang valid' : discount;
-      output300Field.textContent = isNaN(anda) ? 'Masukkan nilai yang valid' : anda;
-    });
-  </script> -->
-
-  <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="vendor/simplebar/dist/simplebar.min.js"></script>
-  <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-  <script src="vendor/jarallax/dist/jarallax.min.js"></script>
-
-  <script src="vendor/lightgallery.js/dist/js/lightgallery.min.js"></script>
-  <script src="vendor/lg-fullscreen.js/dist/lg-fullscreen.min.js"></script>
-  <script src="vendor/lg-zoom.js/dist/lg-zoom.min.js"></script>
-  <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="vendor/shufflejs/dist/shuffle.min.js"></script>
-  <script src="vendor/flatpickr/dist/flatpickr.min.js"></script>
-  <script src="vendor/swiper/swiper-bundle.min.js"></script>
-  <!-- Main theme script-->
-  <script src="js/theme.min.js"></script>
-</body>
-
+    <script src="vendor/lightgallery.js/dist/js/lightgallery.min.js"></script>
+    <script src="vendor/lg-fullscreen.js/dist/lg-fullscreen.min.js"></script>
+    <script src="vendor/lg-zoom.js/dist/lg-zoom.min.js"></script>
+    <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="vendor/shufflejs/dist/shuffle.min.js"></script>
+    <script src="vendor/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- Main theme script-->
+    <script src="js/theme.min.js"></script>
+  </body>
 </html>
