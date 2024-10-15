@@ -43,6 +43,22 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
+    <style>
+      .list-container {
+        display: flex;
+        gap: 20px; /* Jarak antara kolom */
+      }
+
+      .col-6 {
+        flex: 1;
+      }
+
+      @media (max-width: 768px) {
+        .col-6 {
+          flex: 100%;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -530,10 +546,10 @@
     <!-- QNA -->
     <section class="bg-secondary py-5">
       <div class="container mt-n4 py-3 py-md-2">
-        <div class="row">
-          <div class="col-lg-6 p-3 col-md-9 align-items-center">
-            <h2 class="mb-5">FAQ</h2>
-            <ol class="text-primary">
+        <h2 class="mb-5">Pertanyaan yang sering ditanyakan</h2>
+        <div class="list-container d-flex flex-wrap">
+          <ol class="d-lg-flex text-primary">
+            <div class="pe-lg-7">
               <li class="fw-bolder">
                 Apa saja syarat umum yang dibutuhkan untuk mengajukan kredit
                 mobil baru?
@@ -581,6 +597,7 @@
                 besar DP, semakin kecil cicilan dan bunga yang harus Anda bayar.
                 Keyword: kredit mobil baru, uang muka, DP, cicilan, bunga
               </p>
+
               <li class="fw-bolder">
                 Bagaimana cara menghitung estimasi cicilan kredit mobil baru?
               </li>
@@ -591,6 +608,8 @@
                 mobil, DP, tenor, dan suku bunga untuk mendapatkan estimasi
                 cicilan per bulan.
               </p>
+            </div>
+            <div>
               <li class="fw-bolder">
                 Apakah ada biaya tambahan selain DP dan cicilan?
               </li>
@@ -625,11 +644,8 @@
                   <strong>Kemudahan</strong> proses pengajuan dan persyaratan
                 </li>
               </ul>
-            </ol>
-          </div>
-          <div class="col-6 align-items-center text-center">
-            <img src="images/illustration-questions.webp" alt="" />
-          </div>
+            </div>
+          </ol>
         </div>
       </div>
     </section>
