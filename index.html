@@ -1,22 +1,18 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Title -->
-    <title>Mobil Baru</title>
-
-    <!-- SEO Meta Tags-->
-    <meta name="description" content="Lorem" />
-    <meta name="keywords" content="lorem" />
-    <meta name="author" content="lorem" />
-
-    <!-- Viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Vendor styles-->
+    <!-- Meta Tag SEO -->
+    <title>BFI Finance</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
-    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="vendor/chartist/dist/chartist.css" />
+    <!-- Browser Logo -->
+    <link rel="icon" href="https://netfin.id/site-assets/netfin/logo.svg" />
+
+    <!-- Vendor Style -->
     <link
       rel="stylesheet"
       media="screen"
@@ -25,36 +21,30 @@
     <link
       rel="stylesheet"
       media="screen"
-      href="vendor/lightgallery.js/dist/css/lightgallery.min.css"
+      href="vendor/tiny-slider/dist/tiny-slider.css"
     />
-
-    <!-- Main Theme Styles + Bootstrap-->
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="vendor/bootstrap/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" media="screen" href="css/theme.min.css" />
 
-    <!-- Custom Css -->
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" media="screen" href="css/style.css" />
 
-    <!-- Bootstrap CDN icon -->
+    <!-- Bootstrap icon CDN link  -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
-    <style>
-      .list-container {
-        display: flex;
-        gap: 20px; /* Jarak antara kolom */
-      }
-
-      .col-6 {
-        flex: 1;
-      }
-
-      @media (max-width: 768px) {
-        .col-6 {
-          flex: 100%;
-        }
-      }
-    </style>
+    <!-- Font Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Clicker+Script&amp;family=Inter:wght@200;300;400;600&amp;display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -130,23 +120,24 @@
     </header>
 
     <!-- Hero -->
-    <section class="d-flex justify-content-end">
-      <div class="row">
+    <section class="">
+      <div class="row py-lg-7 p-5">
+        <div class="col-6"></div>
         <div class="col bg-light rounded-1">
-          <div class="p-5 rounded mb-5">
-            <h1 class="display-5 text-uppercase pb-sm-2 pb-md-3">
-              Konsultan Untuk Pembelian Mobil Baru anda.
-            </h1>
+          <div class="rounded mb-5">
             <div class="row">
-              <div class="col-8">
-                <p>
+              <div class="col-lg-8">
+                <h1 class="display-6 text-uppercase pb-sm-2 pb-md-3">
+                  Konsultan Untuk Pembelian Mobil Baru anda.
+                </h1>
+                <p class="fs-sm">
                   Halo saya Shandy, saya bekerja di salah satu Leasing terkemuka
                   dalam pembelian Mobil baru. Saya bekerja sama dengan berbagai
                   macam Dealer seperti Daihatsu, Suzuki, Citroen, Honda, AION,
                   Hyundai, Nissan, Toyota, Mitsubishi, KIA, Chery, BYD. Apa
                   kelebihan beli mobil di Shandy ?
                 </p>
-                <ol>
+                <ol class="fs-sm">
                   <li>Diskon pasti lebih besar dari yang lain,</li>
                   <li>
                     Proses Pengajuan Kredit langsung di pantau Shandy sendiri.
@@ -154,32 +145,53 @@
                   <li>Jadwal test drive dijamin lebih cepat.</li>
                   <li>Angsuran dan DP bisa Shandy berikan yang Nett Sekali</li>
                 </ol>
-                <p>
+                <p class="fs-sm">
                   Tapi ingat ya, Proses bisa cepat Asal BI Checking masih dapat
                   masuk kriteria yang dapat di proses.
                 </p>
-                <p>
+                <p class="fs-sm">
                   Ayo Tunggu apa lagi. Shandy bantu sampai selesai proses
                   pembelian mobil barunya.
                 </p>
+
+                <a class="btn btn-outline-dark" href="https://bit.ly/NCShandy"
+                  >Hubungi Shandy</a
+                >
               </div>
-              <div class="col align-content-end">
+              <div class="col p-4 align-content-end">
                 <img
                   src="images/office girl.webp"
                   class="rounded-circle"
-                  width="150"
+                  width="100"
                   alt=""
                 />
               </div>
             </div>
-
-            <a class="btn btn-outline-dark" href="https://bit.ly/NCShandy"
-              >Hubungi Shandy</a
-            >
           </div>
         </div>
       </div>
     </section>
+
+    <section>
+      <div class="w3-content w3-section p-5 rounded">
+        <img
+          class="mySlides rounded"
+          src="images/Banner_AION.webp"
+          style="width: 100%"
+        />
+        <img
+          class="mySlides rounded"
+          src="images/Banner_Byd.webp"
+          style="width: 100%; height: 800px"
+        />
+        <img
+          class="mySlides rounded"
+          src="images/Banner_Chery.webp"
+          style="width: 100%"
+        />
+      </div>
+    </section>
+
     <!-- Brand -->
     <section class="bg-secondary container-fluid pt-4 pb-md-4">
       <h2 class="mb-5 text-center">ATPM Partnership</h2>
@@ -737,18 +749,33 @@
         </div>
       </div>
     </footer>
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 5000); // Change image every 2 seconds
+      }
+    </script>
 
     <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/simplebar/dist/simplebar.min.js"></script>
     <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="vendor/lightgallery.js/dist/js/lightgallery.min.js"></script>
-    <script src="vendor/lg-fullscreen.js/dist/lg-fullscreen.min.js"></script>
-    <script src="vendor/lg-zoom.js/dist/lg-zoom.min.js"></script>
+    <script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
     <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <script src="vendor/shufflejs/dist/shuffle.min.js"></script>
-    <script src="vendor/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="vendor/parallax-js/dist/parallax.min.js"></script>
 
-    <!-- Main theme script-->
     <script src="js/theme.min.js"></script>
   </body>
 </html>
